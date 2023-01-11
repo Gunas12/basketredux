@@ -39,7 +39,7 @@ function Index() {
                         <TableHead  >
                             <TableRow>
                                 <TableCell >#</TableCell>
-                                <TableCell>Prwoduct Name</TableCell>
+                                <TableCell>Product Name</TableCell>
                                 <TableCell>Quantity</TableCell>
                                 <TableCell>Price</TableCell>
                                 <TableCell>Add basket</TableCell>

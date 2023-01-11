@@ -45,7 +45,6 @@ const counterSlice = createSlice({
         Decrement: (state, actions) => {
             if (state.value.some((x) => x.data?.id === actions.payload.id)) {
                 state.value.forEach(element => {
-                    console.log(element.count);
                     if (element.count === 1) {
 
                         state.value = state.value.filter(x => x.data?.id !== actions.payload.id)
@@ -57,7 +56,6 @@ const counterSlice = createSlice({
                     }
                 });
             }
-            console.log(actions.payload);
         },
         handleDel: (state, actions) => {
             state.value = state.value.filter(x => x.data?.id !== actions.payload.id)

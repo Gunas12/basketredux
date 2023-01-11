@@ -1,10 +1,7 @@
-import { useSelect } from '@mui/base'
 import React from 'react'
-import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-
 function Navbar() {
-    const Count = useSelector(state => state.counter.item)
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light  " style={{ backgroundColor: "#63d9f0fa" }}>
             <div className="container d-flex">
@@ -18,7 +15,7 @@ function Navbar() {
                             <Link className="text-dark text-decoration-none font-weight-bolder" to="/" style={{ marginLeft: "20px" }} ><b>Table</b></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="text-dark text-decoration-none font-weight-bolder" to="basket" style={{ marginLeft: "20px" }}><b>Basket  <h1>{Count}</h1></b></Link>
+                            <Link className="text-dark text-decoration-none font-weight-bolder" to="basket" style={{ marginLeft: "20px" }}><b>Basket</b></Link>
                         </li>
                     </ul>
                 </div>
@@ -26,5 +23,4 @@ function Navbar() {
         </nav>
     )
 }
-
 export default Navbar
